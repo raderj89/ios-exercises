@@ -14,6 +14,17 @@
     NSString *itemToReturn;
 
     /* WORK HERE */
+    if(dollars >= 100000) {
+        itemToReturn = @"have The Big Apple";
+    } else if(dollars >= 1000) {
+        itemToReturn = @"have an Apple computer";
+    } else if(dollars < 5) {
+        itemToReturn = @"get out of my store";
+    } else if(dollars >= 5) {
+        itemToReturn = @"have some gum";
+    } else if(dollars >= 6) {
+        itemToReturn = @"have an apple";
+    }
     
     NSLog(@"For $%ld, Mary can: %@", (long)dollars, itemToReturn);
     return itemToReturn;
