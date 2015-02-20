@@ -32,7 +32,7 @@
  @param arrayToRemember A mutable array.
  */
 - (void) rememberThisArrayForLater:(NSMutableArray *)arrayToRemember;
-
+@property (nonatomic, strong) NSMutableArray *rememberedArray;
 /**
  Provides the remembered mutable array.
  
